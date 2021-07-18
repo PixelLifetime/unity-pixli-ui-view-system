@@ -1,7 +1,10 @@
 {
     "name": "NewAssembly",
+    "rootNamespace": "",
     "references": [
-        "Unity.TextMeshPro"
+        "Unity.TextMeshPro",
+        "com.pixel-lifetime.unity-pixli-audio-system",
+        "com.pixel-lifetime.unity-pixli-extensions"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

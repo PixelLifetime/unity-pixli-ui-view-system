@@ -442,6 +442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5889558091955809513}
   - component: {fileID: 5889558091955809512}
+  - component: {fileID: 1387425818012553108}
   m_Layer: 0
   m_Name: '[Slider] Volume'
   m_TagString: Untagged
@@ -534,6 +535,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &1387425818012553108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5889558091955809514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5978324185120632919, guid: eba404f1e15d00c4bb4b7d7c9e7f9a5f, type: 3}
+          m_TargetAssemblyTypeName: AudioSourcePlayer, com.pixel-lifetime.unity-pixli-audio-system
+          m_MethodName: PlayUI
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 919c32fceab83d049ad412cba0be14f7, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5889558092265377643
 GameObject:
   m_ObjectHideFlags: 0
