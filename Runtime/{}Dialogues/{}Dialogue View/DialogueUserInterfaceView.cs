@@ -45,8 +45,12 @@ namespace PixLi
 		[SerializeField] private AudioClipInterruptivePlaybackEngine _audioClipInterruptivePlaybackEngine;
 		public AudioClipInterruptivePlaybackEngine _AudioClipInterruptivePlaybackEngine => this._audioClipInterruptivePlaybackEngine;
 
+		private Coroutine _voiceOverPlaybackCoroutine;
+
 		public void Display(DialogueUserInterfaceViewDisplayData displayData)
 		{
+			this.Show();
+
 			DialogueData dialogueData = displayData.DialogueData;
 
 			this._audioClipInterruptivePlaybackEngine.Play(audioClip: dialogueData._AudioCover);
@@ -56,7 +60,10 @@ namespace PixLi
 			this.viewOutput._CollocutorNameTextField.text = dialogueData._Collocutor._ProfileName;
 			this.viewOutput._CollocutorIconImageField.sprite = dialogueData._Collocutor._ProfileIcon;
 
-			this.StartCoroutine(
+			if (this._voiceOverPlaybackCoroutine != null)
+				this.StopCoroutine(this._voiceOverPlaybackCoroutine);
+
+			this._voiceOverPlaybackCoroutine = this.StartCoroutine(
 				routine: CoroutineProcessorsCollection.InvokeAfter(
 					seconds: dialogueData._AudioCover.length,
 					action: () =>
