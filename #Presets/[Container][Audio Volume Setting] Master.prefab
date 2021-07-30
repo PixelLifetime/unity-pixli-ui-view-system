@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5889558091393545455}
   m_Layer: 0
-  m_Name: '[Container][Settings] Master'
+  m_Name: '[Container][Audio Volume Setting] Master'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -641,7 +641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545440, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Name
-      value: '[Container][Settings] Master'
+      value: '[Container][Audio Volume Setting] Master'
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Pivot.x
@@ -807,7 +807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545440, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Name
-      value: '[Container][Settings] Narrative'
+      value: '[Container][Audio Volume Setting] Narrative'
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Pivot.x
@@ -961,7 +961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545440, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Name
-      value: '[Container][Settings] Music'
+      value: '[Container][Audio Volume Setting] Music'
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Pivot.x
@@ -1107,19 +1107,19 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 5f3e188eda3a3b54bbd2c7ad91c1f394, type: 2}
     - target: {fileID: 5889558090733920173, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.553
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558090733920173, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545440, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Name
-      value: '[Container][Settings] Ambience'
+      value: '[Container][Audio Volume Setting] Ambience'
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545440, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Pivot.x
@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1147,11 +1147,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1186.43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1187,11 +1187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 593.215
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -390
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1207,15 +1207,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091581355968, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.553
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091581355968, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091581355968, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.553
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091678723678, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_text
@@ -1273,7 +1273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545440, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Name
-      value: '[Container][Settings] Sound Effect'
+      value: '[Container][Audio Volume Setting] Sound Effect'
       objectReference: {fileID: 0}
     - target: {fileID: 5889558091393545455, guid: 65a7d83cee50dfc49a13242d89e0452e, type: 3}
       propertyPath: m_Pivot.x
