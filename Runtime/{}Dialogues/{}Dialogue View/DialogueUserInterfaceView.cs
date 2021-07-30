@@ -101,6 +101,16 @@ namespace PixLi
 				this.Hide();
 		}
 
+		public static MonoBehaviourSingletonEmbedded<DialogueUserInterfaceView> S_Singleton_ { get; private set; }
+		public static DialogueUserInterfaceView _Instance => S_Singleton_._Instance;
+
+		protected override void Awake()
+		{
+			base.Awake();
+
+			S_Singleton_ = new MonoBehaviourSingletonEmbedded<DialogueUserInterfaceView>(this);
+		}
+
 #if UNITY_EDITOR
 		//protected override void OnDrawGizmos()
 		//{

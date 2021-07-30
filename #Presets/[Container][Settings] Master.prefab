@@ -442,6 +442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5889558091955809513}
   - component: {fileID: 5889558091955809512}
+  - component: {fileID: 5256524893064791804}
   - component: {fileID: 1387425818012553108}
   m_Layer: 0
   m_Name: '[Slider] Volume'
@@ -523,8 +524,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 420500f5be94a964e9cdb535237b16fb, type: 2}
-        m_TargetAssemblyTypeName: MasterAudioSourceControlGroup, com.pixel-lifetime.unity-pixli-audio-system
+      - m_Target: {fileID: 11400000, guid: 59e7381a44c2d1646ad22f3f030587ab, type: 2}
+        m_TargetAssemblyTypeName: AudioSourceControlGroup, com.pixel-lifetime.unity-pixli-audio-system
         m_MethodName: set_Volume
         m_Mode: 0
         m_Arguments:
@@ -535,6 +536,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &5256524893064791804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5889558091955809514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6441fb216821dd4c8b9a902e9d86c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSourceControlGroup: {fileID: 11400000, guid: 59e7381a44c2d1646ad22f3f030587ab, type: 2}
+  _slider: {fileID: 5889558091955809512}
 --- !u!114 &1387425818012553108
 MonoBehaviour:
   m_ObjectHideFlags: 0
