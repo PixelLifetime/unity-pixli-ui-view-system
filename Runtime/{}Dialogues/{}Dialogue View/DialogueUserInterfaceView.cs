@@ -47,6 +47,9 @@ namespace PixLi
 
 		private Coroutine _voiceOverPlaybackCoroutine;
 
+		[SerializeField] private UnityEvent _onDisplayed;
+		public UnityEvent _OnDisplayed => this._onDisplayed;
+
 		public void Display(DialogueUserInterfaceViewDisplayData displayData)
 		{
 			this.Show();
@@ -72,6 +75,8 @@ namespace PixLi
 					}
 				)
 			);
+
+			this._onDisplayed.Invoke();
 		}
 
 		private DialogueUserInterfaceViewDisplayData _displayedData;
@@ -88,6 +93,9 @@ namespace PixLi
 			this.Display(this._displayedData);
 		}
 
+		[SerializeField] private UnityEvent _onDialogueFinished;
+		public UnityEvent _OnDialogueFinished => this._onDialogueFinished;
+
 		public void DisplayNext()
 		{
 			this._displayDialogueDataIndex++;
@@ -98,7 +106,11 @@ namespace PixLi
 				this.Display(this._displayedData);
 			}
 			else
+			{
 				this.Hide();
+
+				this._onDialogueFinished.Invoke();
+			}
 		}
 
 		public static MonoBehaviourSingletonEmbedded<DialogueUserInterfaceView> S_Singleton_ { get; private set; }
