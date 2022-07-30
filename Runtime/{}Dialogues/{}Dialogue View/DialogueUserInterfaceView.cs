@@ -47,6 +47,9 @@ namespace PixLi
 
 		private Coroutine _voiceOverPlaybackCoroutine;
 
+		[SerializeField] private UnityEvent _onDisplayed;
+		public UnityEvent _OnDisplayed => this._onDisplayed;
+
 		public void Display(DialogueUserInterfaceViewDisplayData displayData)
 		{
 			this.Show();
@@ -55,7 +58,11 @@ namespace PixLi
 
 			this._audioClipInterruptivePlaybackEngine.Play(audioClip: dialogueData._AudioCover);
 
-			this.viewOutput._MessageTextField.text = dialogueData._SentenceText;
+			//this.viewOutput._MessageTextField.text = dialogueData._SentenceText;
+			this.viewOutput._MessageTextField.GetComponent<TextAnimator>().SetText(
+				text: dialogueData._SentenceText,
+				onFinished: null
+			);
 
 			this.viewOutput._CollocutorNameTextField.text = dialogueData._Collocutor._ProfileName;
 			this.viewOutput._CollocutorIconImageField.sprite = dialogueData._Collocutor._ProfileIcon;
@@ -63,15 +70,17 @@ namespace PixLi
 			if (this._voiceOverPlaybackCoroutine != null)
 				this.StopCoroutine(this._voiceOverPlaybackCoroutine);
 
-			this._voiceOverPlaybackCoroutine = this.StartCoroutine(
-				routine: CoroutineProcessorsCollection.InvokeAfter(
-					seconds: dialogueData._AudioCover.length,
-					action: () =>
-					{
-						this.DisplayNext();
-					}
-				)
-			);
+			//this._voiceOverPlaybackCoroutine = this.StartCoroutine(
+			//	routine: CoroutineProcessorsCollection.InvokeAfter(
+			//		seconds: dialogueData._AudioCover.length,
+			//		action: () =>
+			//		{
+			//			this.DisplayNext();
+			//		}
+			//	)
+			//);
+
+			this._onDisplayed.Invoke();
 		}
 
 		private DialogueUserInterfaceViewDisplayData _displayedData;
@@ -88,6 +97,9 @@ namespace PixLi
 			this.Display(this._displayedData);
 		}
 
+		[SerializeField] private UnityEvent _onDialogueFinished;
+		public UnityEvent _OnDialogueFinished => this._onDialogueFinished;
+
 		public void DisplayNext()
 		{
 			this._displayDialogueDataIndex++;
@@ -98,7 +110,13 @@ namespace PixLi
 				this.Display(this._displayedData);
 			}
 			else
+			{
 				this.Hide();
+
+				this.viewOutput._MessageTextField.GetComponent<TextAnimator>().StopAnimationProcesses();
+
+				this._onDialogueFinished.Invoke();
+			}
 		}
 
 		public static MonoBehaviourSingletonEmbedded<DialogueUserInterfaceView> S_Singleton_ { get; private set; }
