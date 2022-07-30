@@ -4,7 +4,9 @@
     "references": [
         "Unity.TextMeshPro",
         "com.pixel-lifetime.unity-pixli-audio-system",
-        "com.pixel-lifetime.unity-pixli-extensions"
+        "com.pixel-lifetime.unity-pixli-extensions",
+        "com.pixel-lifetime.unity-pixli-identification",
+        "com.pixel-lifetime.unity-pixli-miscellaneous"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
