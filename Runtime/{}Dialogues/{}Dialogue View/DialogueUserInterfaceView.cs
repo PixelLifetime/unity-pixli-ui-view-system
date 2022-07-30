@@ -58,11 +58,11 @@ namespace PixLi
 
 			this._audioClipInterruptivePlaybackEngine.Play(audioClip: dialogueData._AudioCover);
 
-			//this.viewOutput._MessageTextField.text = dialogueData._SentenceText;
-			this.viewOutput._MessageTextField.GetComponent<TextAnimator>().SetText(
-				text: dialogueData._SentenceText,
-				onFinished: null
-			);
+			this.viewOutput._MessageTextField.text = dialogueData._SentenceText;
+			//this.viewOutput._MessageTextField.GetComponent<TextAnimator>().SetText(
+			//	text: dialogueData._SentenceText,
+			//	onFinished: null
+			//);
 
 			this.viewOutput._CollocutorNameTextField.text = dialogueData._Collocutor._ProfileName;
 			this.viewOutput._CollocutorIconImageField.sprite = dialogueData._Collocutor._ProfileIcon;
