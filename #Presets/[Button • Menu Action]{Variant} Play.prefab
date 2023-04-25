@@ -105,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6408242628438261110, guid: 115085ae8f6cb5d41b33f3b34b62eae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6408242628438261110, guid: 115085ae8f6cb5d41b33f3b34b62eae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -117,19 +117,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6408242628438261110, guid: 115085ae8f6cb5d41b33f3b34b62eae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
+      value: LoadNextSceneReferenceCollection
       objectReference: {fileID: 0}
     - target: {fileID: 6408242628438261110, guid: 115085ae8f6cb5d41b33f3b34b62eae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneController, Assembly-CSharp
+      value: SceneController, com.pixel-lifetime.unity-pixli-scene-management
       objectReference: {fileID: 0}
     - target: {fileID: 6408242628438261110, guid: 115085ae8f6cb5d41b33f3b34b62eae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 80c6f9a2e09869347b9b208737c2e90a, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6408242628438261110, guid: 115085ae8f6cb5d41b33f3b34b62eae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: SceneReferenceCollection, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 115085ae8f6cb5d41b33f3b34b62eae3, type: 3}
